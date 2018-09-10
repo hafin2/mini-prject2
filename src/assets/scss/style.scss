@@ -20,7 +20,7 @@ button {
 
     &:hover {
         color: #fff;
-        background-color: $green;
+        background-color: $green !important;
         border: 2px solid $green;
     }
 }

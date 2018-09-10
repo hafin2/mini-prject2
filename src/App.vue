@@ -82,6 +82,7 @@
             <ul>
                 <h5>CONTACT DETAILS</h5>
                 <li class="item1"> <a href="#"> Head Office: Avenue Fashion, <br> 180-182 Regent Street, London. </a> </li>
+                <br>
                 <li class="item1"> <a href="#"> Telephone: 0123-456-789 </a> </li>
                 <li class="item1"> <a href="#"> Email: support@yourwebsite.com </a> </li>
 

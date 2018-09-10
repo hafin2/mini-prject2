@@ -1,0 +1,21 @@
+.product-details {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  margin-top: 60px; }
+  .product-details .product-left {
+    grid-column: 3 / 6; }
+    .product-details .product-left img {
+      width: 100%;
+      object-fit: cover; }
+  .product-details .product-right {
+    grid-column: 6 / 9; }
+    .product-details .product-right .review-share {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+    .product-details .product-right .price {
+      display: flex; }
+      .product-details .product-right .price .strike {
+        margin-right: 10px; }
