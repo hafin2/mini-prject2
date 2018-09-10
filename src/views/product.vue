@@ -7,6 +7,5 @@
             <h2>SOMETHING NICE</h2>
             </div>
          </div>
-
   </div>
 </template>
