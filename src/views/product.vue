@@ -75,21 +75,22 @@
                     </div>
             </div>
         </div>
-        <div class="products-tabs">
-
-        </div>
+    
+    <tabs/>
 
   </div>
 </template>
 
 <script>
 import subhero from "@/components/subhero.vue";
+import tabs from "@/components/tabs.vue";
 import axios from "axios";
 
 export default {
   name: "signin",
   components: {
-    subhero
+    subhero,
+    tabs
   },
   data() {
       return {
