@@ -1,5 +1,5 @@
 <template>
-    <div class="hero">
+    <div class="front-hero">
         <img src="../assets/img/hero.png" alt="">
         <button class="btn">SHOP MEN'S COLLECTION</button>
         </div>

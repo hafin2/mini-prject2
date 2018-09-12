@@ -1,0 +1,40 @@
+$phone : '(max-width: 480px)';
+$tablet-portrait: '(max-width: 768px)';
+$tablet-landscape: '(min-width: 769px) and (max-width: 1024px)';
+$large-desktop: '(min-width: 1200px)';
+
+@mixin phone {
+  @media #{$phone} {
+    @content;
+  }
+}
+
+@mixin tablet-portrait {
+  @media #{$tablet-portrait} {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media #{$tablet-landscape} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$large-desktop} {
+    @content;
+  }
+}
+
+// p {
+//     font-size: 16px;
+  
+//     @include tablet {
+//       font-size: 18px;
+//     }
+  
+//     @include desktop {
+//       font-size: 20px;
+//     }
+//   }

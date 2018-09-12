@@ -13,9 +13,60 @@
     grid-column: 6 / 9; }
     .product-details .product-right .review-share {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between; }
+      flex-direction: row; }
+      .product-details .product-right .review-share .stars {
+        display: flex; }
+        .product-details .product-right .review-share .stars p {
+          margin: 0; }
+      .product-details .product-right .review-share .share {
+        display: flex;
+        justify-content: space-between; }
+      .product-details .product-right .review-share .checked {
+        color: gold; }
+      .product-details .product-right .review-share a {
+        text-decoration: none;
+        color: #333333; }
+        .product-details .product-right .review-share a:hover {
+          color: #00c8c8; }
     .product-details .product-right .price {
-      display: flex; }
+      display: flex;
+      color: #727272; }
       .product-details .product-right .price .strike {
         margin-right: 10px; }
+    .product-details .product-right .prod-info {
+      list-style: none;
+      padding: 0; }
+      .product-details .product-right .prod-info b {
+        color: #333333; }
+    .product-details .product-right .product-description {
+      color: #727272; }
+    .product-details .product-right ul {
+      padding-left: 20px;
+      color: #727272; }
+    .product-details .product-right .selectors {
+      display: flex;
+      justify-content: space-between; }
+    .product-details .product-right .add-btn {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      height: 60px; }
+      .product-details .product-right .add-btn .btn-add-cart {
+        width: 200px; }
+        .product-details .product-right .add-btn .btn-add-cart:hover {
+          background-color: #333333 !important;
+          border: 1px solid #333333; }
+      .product-details .product-right .add-btn .btn-add-lookbook {
+        width: 260px; }
+        .product-details .product-right .add-btn .btn-add-lookbook:hover {
+          background-color: #333333 !important;
+          border: 1px solid #333333; }
+      .product-details .product-right .add-btn i {
+        margin-right: 10px; }
+    .product-details .product-right .compare {
+      margin-top: 20px; }
+      .product-details .product-right .compare a {
+        text-decoration: none;
+        color: #333333; }
+        .product-details .product-right .compare a:hover {
+          color: #00c8c8; }

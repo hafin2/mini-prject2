@@ -1,0 +1,155 @@
+#miniNav {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 50px;
+  grid-template-areas: ". . header header header header header . . .";
+  background-color: #333333; }
+  #miniNav .currency {
+    border: none;
+    background-color: #333333;
+    color: #727272; }
+  #miniNav .shopping-cart {
+    grid-column: 8 / 9;
+    background-color: #00c8c8;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+    max-width: 120px; }
+    #miniNav .shopping-cart i {
+      color: #fff;
+      margin-right: 10px; }
+    #miniNav .shopping-cart a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px; }
+      #miniNav .shopping-cart a:hover {
+        color: #fff; }
+  #miniNav ul.miniNav {
+    grid-area: header;
+    list-style: none;
+    display: inline; }
+    #miniNav ul.miniNav li {
+      display: inline;
+      float: right; }
+      #miniNav ul.miniNav li i {
+        color: #fff; }
+    #miniNav ul.miniNav a {
+      color: #727272;
+      display: block;
+      padding: 16px;
+      text-decoration: none;
+      display: inline; }
+      #miniNav ul.miniNav a:hover {
+        color: #00c8c8; }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #miniNav {
+      display: none; } }
+  @media (max-width: 768px) {
+    #miniNav {
+      display: none; } }
+  @media (max-width: 480px) {
+    #miniNav {
+      display: none; } }
+
+#mainNav {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 80px;
+  grid-template-areas: ". . header header header header header header . .";
+  position: absolute;
+  left: 0;
+  right: 0; }
+  #mainNav .search-bar {
+    grid-column: 9 / 10;
+    height: 10px;
+    margin-top: 25px;
+    padding: 8px;
+    font-size: 13px;
+    margin-left: 40px; }
+  #mainNav .logo {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  #mainNav ul.mainNav {
+    grid-area: header;
+    list-style: none;
+    display: inline; }
+    #mainNav ul.mainNav li {
+      display: inline;
+      float: right; }
+    #mainNav ul.mainNav a {
+      color: #333333;
+      padding: 16px;
+      font-size: 15px;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #mainNav ul.mainNav a i {
+        margin-right: 30px; }
+      #mainNav ul.mainNav a:hover {
+        color: #00c8c8; }
+  #mainNav .trigger-max-menu {
+    position: relative; }
+  #mainNav .max-menu {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    opacity: 0;
+    width: 350px;
+    height: auto;
+    background-color: #fff;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;
+    line-height: 5px;
+    text-align: start; }
+    #mainNav .max-menu p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 14px;
+      color: #000; }
+    #mainNav .max-menu .menu-left {
+      grid-column: 1 / 2; }
+      #mainNav .max-menu .menu-left a {
+        line-height: 40px;
+        padding: 0;
+        color: gray; }
+    #mainNav .max-menu .menu-right {
+      grid-column: 2 / 3;
+      padding-left: 20px; }
+      #mainNav .max-menu .menu-right a {
+        line-height: 40px;
+        padding: 0;
+        color: gray; }
+    #mainNav .max-menu .menu-banner {
+      grid-column: 1 / 3;
+      text-align: center;
+      background-color: #333333;
+      color: #fff;
+      margin-top: 20px;
+      height: 100px; }
+      #mainNav .max-menu .menu-banner h1 {
+        margin-top: 30px; }
+  #mainNav .trigger-max-menu:hover .max-menu {
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0px 10px 20px #0000001f;
+    -webkit-transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+    transition: opacity .2s ease-out; }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #mainNav {
+      display: none; } }
+  @media (max-width: 768px) {
+    #mainNav {
+      display: none; } }
+  @media (max-width: 480px) {
+    #mainNav {
+      display: none; } }

@@ -1,12 +1,7 @@
 <template>
     <div class="brand">
-        <div class="brand-hero">
-            <img src="../assets/img/brand-hero.png" alt="">
-            <div class="brand-title">
-            <h1>THE BRAND</h1>
-            <h2>SOMETHING NICE</h2>
-            </div>
-         </div>
+
+        <subhero heroTitle="hej" heroSubtitle="hej"> </subhero>
 
         <div class="brand-container">
             <img class="brand-img1" src="../assets/img/brand1.png" alt="">
@@ -49,5 +44,12 @@
 
 
 <script>
-    export default {}
+import subhero from "@/components/subhero.vue"
+
+export default {
+    name: "brand",
+    components: {
+        subhero
+    } 
+}
 </script>

@@ -1,27 +1,26 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
-    
+
     <nav id="miniNav">
 
         <ul class="miniNav">
           
             <select class="currency">
-              <option value="volvo">DKK</option>
-              <option value="saab">EUR</option>
-              <option value="opel">USD</option>
+              <option value="GBP">GBP</option>
+              <option value="DKK">DKK</option>
+              <option value="EUR">EUR</option>
+              <option value="USD">USD</option>
             </select>
-            <li> <i class="fa fa-shopping-cart"></i> <a href="#">Cart</a></li>
-            
+
+
             <li><router-link to="/signin">Sign In</router-link></li>
             <li><router-link to="/signin">Register</router-link></li>
         </ul>
+        <div class="shopping-cart">  <a href="#"><i class="fa fa-shopping-cart"></i> empty <i class="fas fa-angle-down"></i></a></div>
+            
     </nav>
     <nav id="mainNav">
-        <router-link to="/"> <img src="./assets/img/logo.png" alt="logo"> </router-link>
+        <router-link class="logo" to="/"> <img src="./assets/img/logo.png" alt="logo"> </router-link>
         <ul class="mainNav">
             <li>
                 <a href="#">LOOK BOOK</a>
@@ -35,8 +34,31 @@
             <li>
                 <a href="#">WOMENS</a>
             </li>
-            <li>
-                <a href="#">MENS</a>
+            <li class="trigger-max-menu">
+                <a href="#">MENS <i class="fas fa-angle-down"></i></a>
+                
+                <div class="max-menu">
+                    <div class="menu-left">
+                        <p>CASUALS</p>
+                        <a href="#">Jackets</a>
+                        <a href="#">Hoodies &amp; Sweatshirts</a>
+                        <a href="#">Polo Shirts</a>
+                        <a href="#">Sportswear</a>
+                        <a href="#">Trousers &amp; Chinos</a>
+                        <a href="#">T-Shirts</a>
+                    </div>
+                    <div class="menu-right">
+                        <p>FORMAL</p>
+                        <a href="#">Jackets</a>
+                        <a href="#">Shirts</a>
+                        <a href="#">Suits</a>
+                        <a href="#">Trousers</a>
+                    </div>
+                    <div class="menu-banner">
+                        <h1>AUTUMN SALE!</h1>
+                        <h1>UP TO 50% OFF</h1>
+                    </div>
+                </div>
             </li>
         </ul>
         <input class="search-bar" type="text" placeholder="Search.." name="search">
@@ -58,8 +80,8 @@
                 <li class="item1"> <a href="#"> Shipping &amp; returns</a> </li>
                 <li class="item1"> <a href="#"> Secure shopping </a> </li>
                 <li class="item1"> <a href="#"> Testimonials </a> </li>
-                <li class="item1"> <a href="#"> Award winning </a> </li>
-                <li class="item1"> <a href="#"> Ethical trading </a> </li>
+                <li class="item1"> <router-link to="/brand"> Award winning </router-link> </li>
+                <li class="item1"> <router-link to="/brand"> Ethical trading </router-link> </li>
             </ul>
             <ul>
                 <h5>YOUR ACCOUNT</h5>

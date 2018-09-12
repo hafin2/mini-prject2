@@ -1,0 +1,147 @@
+@import "variables";
+@import "mixins";
+
+footer {
+    display: grid;
+    margin-top: 100px;
+    background-color: $light-grey;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 200px 50px;
+    grid-gap: 20px;
+
+    .footerLinks {
+        grid-column: 3 / 9;
+        grid-row: 1 / 2;
+        display: flex;
+        justify-content: space-between;
+        line-height: 2.15;
+
+        @include tablet-portrait {
+            grid-column: 2 / 10;
+        }
+
+        @include tablet-landscape {
+            grid-column: 2 / 10;
+        }
+
+        ul {
+            list-style: none;
+            padding-inline-start: 0 !important;
+
+            a {
+                text-decoration: none;
+                font-weight: 300;
+                font-size: 13px;
+                color: $dark;
+
+                &:hover {
+                    color: $green;
+                }
+            }
+        }
+    }
+
+    .award {
+        grid-column: 3 / 6;
+        grid-row: 2 / 3;
+        font-family: 'Roboto';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $dark;
+
+        @include tablet-portrait {
+            grid-column: 2 / 6;
+        }
+
+        @include tablet-landscape {
+            grid-column: 2 / 6;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        p {
+            font-size: 30px;
+            color: $light-grey;
+            font-weight: 300;
+            margin-top: 0px;
+
+            @include tablet-portrait {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .social {
+        grid-column: 6 / 9;
+        grid-row: 2 / 3;
+        background-color: $green;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        @include tablet-portrait {
+            grid-column: 6 / 10;
+        }
+
+        @include tablet-landscape {
+            grid-column: 6 / 10;
+        }
+
+        i {
+            font-size: 40px;
+            color: #fff;
+        }
+    }
+
+    @include phone {
+        display: none;
+    }
+}
+
+.bottomBar {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 50px;
+    background-color: $dark;
+    font-size: 12.5px;
+
+    .copyright {
+        grid-column: 3;
+        color: $grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .author {
+        color: $grey;
+        grid-column: 7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .site {
+        color: $grey;
+        grid-column: 8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include tablet-portrait {
+        display: none;
+    }
+
+    @include phone {
+        display: none;
+    }
+}

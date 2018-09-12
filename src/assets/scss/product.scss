@@ -1,3 +1,6 @@
+@import "variables";
+
+
 .product-details {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -16,6 +19,7 @@
         }
     }
 
+   
 
     .product-right {
         grid-column: 6 / 9;
@@ -23,15 +27,107 @@
         .review-share {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            // justify-content: space-between;
+            // margin-right: 20px;
+
+
+            .stars {
+                display: flex;
+                p {
+                    margin: 0;
+                }
+            }
+            .share {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .checked {
+                color: gold;
+            }
+
+            a {
+                text-decoration: none;
+                color: $dark;
+
+                &:hover {
+                    color: $green;
+                }
+            }
         }
         .price {
             display: flex;
+            color: $grey;
             
             .strike {
                 margin-right: 10px;
             }
         }
 
+        .prod-info {
+            list-style: none;
+            padding: 0;
+            b {
+                color: $dark;
+            }
+        }
+
+        .product-description {
+            color: $grey;
+        }
+    
+        ul {
+            padding-left: 20px;
+            color: $grey;
+        }
+
+
+        .selectors {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+        .add-btn {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            height: 60px;
+
+            .btn-add-cart {
+                width: 200px;
+                &:hover {
+                    background-color: $dark !important;
+                    border: 1px solid $dark;
+                }
+            }
+
+            .btn-add-lookbook {
+                width: 260px;
+                &:hover {
+                    background-color: $dark !important;
+                    border: 1px solid $dark;
+                }
+            }
+        
+            i {
+                margin-right: 10px;
+            }
+        }
+
+        .compare {
+            margin-top: 20px;
+            a {
+                text-decoration: none;
+                color: $dark;
+
+                &:hover {
+                    color: $green;
+                }
+            }
+            
+            
+        }
     }
 }
