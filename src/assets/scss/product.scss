@@ -130,4 +130,14 @@
             
         }
     }
+
+    
+    .products-tabs {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+
+        .menu-tabs {
+            grid-column: 3 / 9;
+        }
+    }
 }
