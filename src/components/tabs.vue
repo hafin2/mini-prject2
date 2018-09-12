@@ -8,13 +8,16 @@
 
         <div class="content">
             <div v-if="activetab === 1" class="tabcontent">
-                Content for tab one
+                <h1>hej1</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis debitis esse omnis, rerum, a excepturi eligendi accusamus amet aliquid enim accusantium reiciendis dolorum eveniet dolore sed earum dolores labore numquam.</p>
             </div>
             <div v-if="activetab === 2" class="tabcontent">
-                Content for tab two
+                <h1>hej2</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis debitis esse omnis, rerum, a excepturi eligendi accusamus amet aliquid enim accusantium reiciendis dolorum eveniet dolore sed earum dolores labore numquam.</p>
             </div>
             <div v-if="activetab === 3" class="tabcontent">
-                Content for tab three
+                <h1>hej3</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis debitis esse omnis, rerum, a excepturi eligendi accusamus amet aliquid enim accusantium reiciendis dolorum eveniet dolore sed earum dolores labore numquam.</p>
             </div>
         </div>
     </div>

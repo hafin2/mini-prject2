@@ -53,7 +53,6 @@
       display: none; } }
 
 #mainNav {
-  background-color: rebeccapurple;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 80px;

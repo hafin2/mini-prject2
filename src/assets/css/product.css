@@ -70,8 +70,9 @@
         color: #333333; }
         .product-details .product-right .compare a:hover {
           color: #00c8c8; }
-  .product-details .products-tabs {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr); }
-    .product-details .products-tabs .menu-tabs {
-      grid-column: 3 / 9; }
+
+.products-tabs {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); }
+  .products-tabs .menu-tabs {
+    grid-column: 3 / 9; }
