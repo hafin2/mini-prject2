@@ -1,7 +1,7 @@
 <template>
     <div class="brand">
 
-        <subhero heroTitle="hej" heroSubtitle="hej"> </subhero>
+        <subhero heroTitle="THE BRAND" heroSubtitle="YOU PROBABLY DIDN'T BUY IT."> </subhero>
 
         <div class="brand-container">
             <img class="brand-img1" src="../assets/img/brand1.png" alt="">

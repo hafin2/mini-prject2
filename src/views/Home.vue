@@ -2,7 +2,7 @@
   <div class="home">
 
     <Hero/>
-
+<div class="max-width">
     <div class="tabs">
         <hr>
         <ul>
@@ -34,9 +34,9 @@
                 <p>{{ product.description1 }}</p>
                 <p>{{ product.description2 }}<br> {{ product.description3 }}</p>
                 <div class="hover-icons">
-                <div class="cirle-icon"> <i class="fa fa-shopping-cart"></i></div>
-                <div class="cirle-icon"> <i class="far fa-heart"></i></div>
-                <div class="cirle-icon"> <i class="fa fa-shopping-cart"></i></div>
+                    <div class="cirle-icon"> <i class="fa fa-shopping-cart"></i></div>
+                    <div class="cirle-icon"> <i class="far fa-heart"></i></div>
+                    <div class="cirle-icon"> <i class="fa fa-shopping-cart"></i></div>
                 </div>
             </div>
         </div>
@@ -75,13 +75,14 @@
         </div>
         </div>
     </div>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Hero from "@/components/Hero.vue"
-import axios from "axios";
+import axios from 'axios';
 
 export default {
   name: "home",
@@ -102,7 +103,7 @@ export default {
           //   .get("https://jsonplaceholder.typicode.com/posts")
             .get("/json/products.json")
           //   .get("https://api.myjson.com/bins/1gydyo")
-            .then(response => (this.products = response.data));
+            .then(response => (this.products = response.data.products));
     }
   }
 };

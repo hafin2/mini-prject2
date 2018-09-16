@@ -1,12 +1,11 @@
 <template>
   <div class="product">
         
-        <subhero heroTitle="hej" heroSubtitle="hej"> </subhero>
+        <subhero heroTitle="Product" heroSubtitle="Page"> </subhero>
 
         <div class="product-details">
             <div v-if="product" class="carousel product-left">
                 <img :src="product.img">
-                <p> {{ product.title }} </p>
                 <!-- <carousel>
                     <slide>
                         Slide 1 Content
@@ -16,8 +15,8 @@
                     </slide>
                 </carousel> -->
             </div>
-            <div class="product-right">
-                <h2>AVE CLASSIC SHIRT</h2>
+            <div v-if="product" class="product-right">
+                <h2>{{ product.title }}</h2>
                     <div class="review-share">
                         <div class="stars">
                             <span class="fa fa-star checked"></span>
@@ -37,7 +36,7 @@
                     </div>
                     <div class="price">
                         <h2 class="strike"><STRIKE>&#163;107</STRIKE></h2>
-                        <h2>&#163;89.99</h2>
+                        <h2>&#163;29.95</h2>
                     </div>
                     <ul class="prod-info">
                         <li><b>AVAILABILITY:</b> In stock</li>
@@ -84,7 +83,7 @@
 <script>
 import subhero from "@/components/subhero.vue";
 import tabs from "@/components/tabs.vue";
-import axios from "axios";
+import axios from 'axios';
 
 export default {
   name: "signin",
@@ -103,7 +102,7 @@ export default {
   methods: {
       getProductById(){
           let productId = this.$route.params.id;
-          console.log(typeof productId);
+        //   console.log(typeof productId);
           axios
             .get("/json/products.json")
             .then(response => {

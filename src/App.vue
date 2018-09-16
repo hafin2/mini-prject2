@@ -64,6 +64,14 @@
         <input class="search-bar" type="text" placeholder="Search.." name="search">
 
     </nav>
+    <div class="burger">
+      <Slide>
+      <router-link to="/">HOME</router-link>
+      <router-link to="/brand">THE BRAND</router-link> 
+      <router-link to="/signin">SIGN IN</router-link> 
+      <router-link to="/signin">SIGN UP</router-link> 
+    </Slide>
+    </div>
     <router-view/>
     <footer>
         <div class="footerLinks">
@@ -133,7 +141,13 @@
 
 
 <script>
-    export default {}
+import { Slide } from 'vue-burger-menu';
+
+export default {
+    components: {
+        Slide
+    }
+}
 </script>
 
 <style lang="scss">
