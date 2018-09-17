@@ -6,14 +6,6 @@
         <div class="product-details">
             <div v-if="product" class="carousel product-left">
                 <img :src="product.imgSingle">
-                <!-- <carousel>
-                    <slide>
-                        Slide 1 Content
-                    </slide>
-                    <slide>
-                        Slide 2 Content
-                    </slide>
-                </carousel> -->
             </div>
             <div v-if="product" class="product-right">
                 <h2>{{ product.title }}</h2>
@@ -63,7 +55,7 @@
                             <option value="Medium">Medium</option>
                             <option value="Large">Large</option>
                         </select>
-                        <input type="number" name="quantity" min="1">
+                        <input type="number" name="quantity" min="1" value="1">
                     </div>
                     <div class="add-btn">
                         <button class="btn-add-cart"><i class="fa fa-shopping-cart"></i>ADD TO CART</button>
