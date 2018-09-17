@@ -16,7 +16,7 @@
 
 
     <div class="products">
-        <div class="item item1 product">
+        <!-- <div class="item item1 product">
             <img src="../assets/img/item1.png" alt="">
         </div>
         <div class="item item2 product">
@@ -27,10 +27,10 @@
         </div>
         <div class="item item4 product">
             <img src="../assets/img/item4.png" alt="">
-        </div>
+        </div> -->
         <div v-for="product in products" :key="product.id" class="item item5 product">
             <router-link :to="`/product/${product.id}`"><img :src="product.img"> </router-link>
-            <div v-for="product in products" :key="product.id" class="product-hover">
+            <div class="product-hover">
                 <p>{{ product.description1 }}</p>
                 <p>{{ product.description2 }}<br> {{ product.description3 }}</p>
                 <div class="hover-icons">
@@ -40,9 +40,9 @@
                 </div>
             </div>
         </div>
-        <div class="item item6 product">
+        <!-- <div class="item item6 product">
             <img src="../assets/img/item6.png" alt="">
-        </div>
+        </div> -->
         <hr>
     </div>
 

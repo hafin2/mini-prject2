@@ -4,7 +4,6 @@
 .brand-container {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    // grid-template-rows: repeat(7, 1fr);
     grid-template-rows: auto;
     grid-gap: 20px;
     margin-top: 60px;
@@ -141,7 +140,6 @@
 
         img {
             width: 100%;
-            // height: 100%;
             object-fit: cover;
         }
 

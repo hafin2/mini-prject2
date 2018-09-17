@@ -1,16 +1,60 @@
 {
-    "count": 1,
+    "count": 6,
     "products":
-
-
 [
     {
-        "id": "5",
-        "title": "AVE CLASSIC SHIRT",
+        "id": "1",
+        "title": "AVE CLASSIC SHIRT1",
         "description1": "Womens burnt orange casual tee  £29.95",
         "description2": "Classic casual t-shirt for women on the move. ",
         "description3": "100% cotton",
-        "img": "../img/item5.png"
+        "img": "../img/item1.png",
+        "imgSingle": "../img/item1.png"
+    },
+    {
+        "id": "2",
+        "title": "AVE CLASSIC SHIRT2",
+        "description1": "Womens burnt orange casual tee  £29.95",
+        "description2": "Classic casual t-shirt for women on the move. ",
+        "description3": "100% cotton",
+        "img": "../img/item2.png",
+        "imgSingle": "../img/item2.png"
+    },
+    {
+        "id": "3",
+        "title": "AVE CLASSIC SHIRT3",
+        "description1": "Womens burnt orange casual tee  £29.95",
+        "description2": "Classic casual t-shirt for women on the move. ",
+        "description3": "100% cotton",
+        "img": "../img/item3.png",
+        "imgSingle": "../img/item3-crop.jpg"
+    },
+    {
+        "id": "4",
+        "title": "AVE CLASSIC SHIRT4",
+        "description1": "Womens burnt orange casual tee  £29.95",
+        "description2": "Classic casual t-shirt for women on the move. ",
+        "description3": "100% cotton",
+        "img": "../img/item4.png",
+        "imgSingle": "../img/item4-crop.jpg"
+    },
+    {
+        "id": "5",
+        "title": "AVE CLASSIC SHIRT5",
+        "description1": "Womens burnt orange casual tee  £29.95",
+        "description2": "Classic casual t-shirt for women on the move. ",
+        "description3": "100% cotton",
+        "img": "../img/item5.png",
+        "imgSingle": "../img/item5.png"
+        },
+    {
+        "id": "6",
+        "title": "AVE CLASSIC SHIRT6",
+        "description1": "Womens burnt orange casual tee  £29.95",
+        "description2": "Classic casual t-shirt for women on the move. ",
+        "description3": "100% cotton",
+        "img": "../img/item6.png",
+        "imgSingle": "../img/item6.png"
     }
 ]
 }

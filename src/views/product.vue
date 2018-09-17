@@ -5,7 +5,7 @@
 
         <div class="product-details">
             <div v-if="product" class="carousel product-left">
-                <img :src="product.img">
+                <img :src="product.imgSingle">
                 <!-- <carousel>
                     <slide>
                         Slide 1 Content
