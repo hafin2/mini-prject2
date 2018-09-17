@@ -113,6 +113,9 @@ hr {
             text-decoration: none;
             display: inline;
             // float: left !important;
+            &:hover {
+                color: $green;
+            }
         }
     }
 
@@ -362,6 +365,10 @@ hr {
         flex-direction: row;
         text-align: end;
 
+        @include desktop {
+            grid-column: 2 / 7;            
+        }
+
         @include tablet-landscape {
             grid-column: 2 / 12;
             grid-row: auto;
@@ -394,7 +401,7 @@ hr {
         }
 
         img {
-            height: 350px;
+            height: auto;
             display: flex;
             flex-direction: column;
             align-items: flex-start !important;
@@ -407,6 +414,10 @@ hr {
 
     .womens {
         grid-column: 5 / 9;
+
+        @include desktop {
+            grid-column: 7 / 12;            
+        }
 
         @include tablet-landscape {
             grid-column: 2 / 12;
@@ -426,6 +437,11 @@ hr {
 
     .your {
         grid-column: 9 / 13;
+
+        @include desktop {
+            grid-column: 2 / 12;   
+            grid-row: 2;         
+        }
 
         @include tablet-landscape {
             grid-column: 2 / 12;

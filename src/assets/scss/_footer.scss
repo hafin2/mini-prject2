@@ -111,6 +111,7 @@ footer {
     font-size: 12.5px;
 
     .copyright {
+        width: 200px;
         grid-column: 3;
         color: $grey;
         display: flex;
@@ -129,6 +130,7 @@ footer {
     }
 
     .site {
+        width: 200px;
         color: $grey;
         grid-column: 8;
         display: flex;

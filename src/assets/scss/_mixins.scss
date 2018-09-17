@@ -1,7 +1,8 @@
 $phone : '(max-width: 480px)';
 $tablet-portrait: '(max-width: 768px)';
 $tablet-landscape: '(min-width: 769px) and (max-width: 1024px)';
-$large-desktop: '(min-width: 1025px)';
+$desktop: '(min-width: 1025px) and (max-width: 1400px)';
+$rest: '(min-width: 1401px)';
 
 @mixin phone {
   @media #{$phone} {
@@ -22,7 +23,12 @@ $large-desktop: '(min-width: 1025px)';
 }
 
 @mixin desktop {
-  @media #{$large-desktop} {
+  @media #{$desktop} {
+    @content;
+  }
+}
+@mixin rest {
+  @media #{$rest} {
     @content;
   }
 }

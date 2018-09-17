@@ -24,10 +24,11 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
-                            <p>3 Reviews</p>
-                            <a href="#">Add a Review</a>
+                            <a href="#">3 Reviews</a>
                         </div>
+                            <a href="#">Add a Review</a>
                         <div class="share">
+                            <p>Share:</p>
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i> </a>
@@ -41,7 +42,7 @@
                     <ul class="prod-info">
                         <li><b>AVAILABILITY:</b> In stock</li>
                         <li><b>PRODUCT CODE:</b> #499577</li>
-                        <li><b>TAGS:</b> Classic, Casual, Loose</li>
+                        <li><b>TAGS:</b><span> Classic, Casual, Loose</span></li>
                     </ul>
                     <p class="product-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio exercitationem tempora dolorem, beatae minima laboriosam excepturi blanditiis quos nesciunt, amet iure quidem dolorum error dicta quaerat suscipit, quam quia sunt.
