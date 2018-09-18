@@ -4,7 +4,7 @@
         <subhero heroTitle="Product" heroSubtitle="Page"> </subhero>
 
         <div class="product-details">
-            <div v-if="product" class="carousel product-left">
+            <div v-if="product" class="product-left">
                 <img :src="product.imgSingle">
             </div>
             <div v-if="product" class="product-right">
@@ -33,7 +33,7 @@
                     </div>
                     <ul class="prod-info">
                         <li><b>AVAILABILITY:</b> In stock</li>
-                        <li><b>PRODUCT CODE:</b> #499577</li>
+                        <li><b>PRODUCT CODE:</b> #{{ product.id }}</li>
                         <li><b>TAGS:</b><span> Classic, Casual, Loose</span></li>
                     </ul>
                     <p class="product-description">
@@ -62,7 +62,6 @@
                         <button class="btn-add-lookbook"><i class="far fa-heart"></i>ADD TO LOOKBOOK</button>
                     </div>
                     <div class="compare">
-                        <!-- <img src="../assets/img/" alt=""> -->
                         <a href="#">ADD TO COMPARE</a>
                     </div>
             </div>

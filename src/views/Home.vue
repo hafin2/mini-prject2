@@ -16,18 +16,6 @@
 
 
     <div class="products">
-        <!-- <div class="item item1 product">
-            <img src="../assets/img/item1.png" alt="">
-        </div>
-        <div class="item item2 product">
-            <img src="../assets/img/item2.png" alt="">
-        </div>
-        <div class="item item3 product">
-            <img src="../assets/img/item3.png" alt="">
-        </div>
-        <div class="item item4 product">
-            <img src="../assets/img/item4.png" alt="">
-        </div> -->
         <div v-for="product in products" :key="product.id" class="item item5 product">
             <router-link :to="`/product/${product.id}`"><img :src="product.img"> </router-link>
             <div class="product-hover">
@@ -40,9 +28,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="item item6 product">
-            <img src="../assets/img/item6.png" alt="">
-        </div> -->
         <hr>
     </div>
 
@@ -100,17 +85,9 @@ export default {
   methods: {
     getData() {
       axios
-          //   .get("https://jsonplaceholder.typicode.com/posts")
             .get("/json/products.json")
-          //   .get("https://api.myjson.com/bins/1gydyo")
             .then(response => (this.products = response.data.products));
     }
   }
 };
-
-
-
-
-  
-
 </script>

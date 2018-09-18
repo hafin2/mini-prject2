@@ -13,7 +13,7 @@
 
       <input type="password" name="password" id="password" placeholder="Your Password..">
       <div class="btn-signin-pass">
-        <button type="submit" :disabled="errors.any()">SIGN IN</button>
+        <button type="submit" @keyup.enter="submit" :disabled="errors.any()">SIGN IN</button>
         <p align="right" class="forgot-pass"><a href="#">Forgot your Password <i class="fas fa-long-arrow-alt-right"></i></a> </p>
       </div>
     </form>
@@ -42,7 +42,7 @@
       </label>
 
     <div class="btn-policy">
-      <button type="submit" :disabled="errors.any()">CREATE ACCOUNT</button>
+      <button type="submit" @keyup.enter="submit" :disabled="errors.any()">CREATE ACCOUNT</button>
       <p align="right" class="policy">By clicking ‘Create Account’, you <br> agree to our <a href="#">Privacy Policy <i class="fas fa-long-arrow-alt-right"></i></a> </p>
       </div>
     </form>

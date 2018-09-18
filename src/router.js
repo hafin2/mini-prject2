@@ -4,7 +4,6 @@ import Home from './views/Home.vue'
 import signin from './views/signin.vue'
 import brand from './views/brand.vue'
 import product from './views/product.vue'
-import json from './views/json-test.vue'
 
 Vue.use(Router)
 
@@ -32,11 +31,6 @@ export default new Router({
       // path: '/product',
       name: 'product',
       component: product
-    },
-    {
-      path: '/json',
-      name: 'json',
-      component: json
     }
   ]
 })
